@@ -1,29 +1,97 @@
 a {
     text-decoration: none;
+    color:black
 }
 * {
     padding: 0;
     margin: 0;
 }
 
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+h1 ,
+.logo__text,
+.top__start__button,
+.top__video__button {
+    font-family: Gilroy-Bold;
+}
+.menu,
+.top__info_second {
+    font-family: Gilroy-Medium;
+}
+
 .header {
     margin-top: 40px;
     margin-bottom: 84px;
+    margin-left: 375px;
+    display: flex;
+    align-items: center;
+}
+
+.logo__text {
+    margin-left: 14px;
+    margin-right: 500px;
+    font-size: 24px;
+}
+
+.logo__be,
+.home__element {
+    color: #F25822;
+}
+.menu {
+    width: 533px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.vector {
+    margin-left: 4px;
 }
 
 .top__content{
     margin-top: 84px;
+    margin-left: 373px;
     margin-bottom: 162px;
+    display: flex;
 }
 
 .top_h1 {
     margin-bottom: 17px;
+    margin-right: 40.94px;
+    font-size: 60px;
 }
 
 .top__info_second {
     margin-bottom: 37px;
+    color: #888;
+    font-size: 20px;
+}
+
+.top__start__button {
+    padding: 15px 36px 16px 35px;
+    margin-right: 72px;
+    background-color: #F25822;
+    font-size: 15px;
+    color: #FFFFFF;
+    border-radius: 50px;
+}
+
+.top__video__button{
+    color: #AAA;
+    font-size: 15px;
 }
 
 .top__logos {
     padding: 97px 375px 96px 345px;
+    display: flex;
+    justify-content: space-between;
 }
