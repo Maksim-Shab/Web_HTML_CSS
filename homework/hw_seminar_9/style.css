@@ -1,0 +1,136 @@
+a {
+    text-decoration: none;
+    color:black
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+body {
+    font-style: normal;
+    font-weight: 400;   
+}
+
+/* header,
+.content {
+    width: 1920px;
+    margin-left: 405px;
+} */
+
+header, 
+.content__blockes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+header {
+    padding-top: 140px;
+    padding-bottom: 125px;
+}
+
+.header__block {
+    padding: 40px 31px 25px 29px;
+}
+
+.icon {
+    margin-left: 1px;
+}
+
+.header__block__head {
+    margin-top: 25px;
+    margin-bottom: 17px;
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 24px;
+}
+
+.header__block-center {
+    /* margin-left: 61px;
+    margin-right: 59px; */
+    box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+}
+
+.header__p {
+    margin-bottom: 25px;
+    width: 310px;
+    color: #666;
+    font-family: Gilroy-Regular;
+    font-size: 15px;
+    line-height: 150%; /* 22.5px */
+}
+
+.hed__read__more {
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 11px;
+    line-height: 150%
+}
+
+.content {
+    padding-top: 92px;
+    text-align: center;
+}
+
+.content__head {
+    margin-bottom: 15px;
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 45px;
+    line-height: normal;
+}
+
+.content_p {
+    margin-bottom: 50px;
+    color: #666;
+    font-family: Gilroy-Regular;
+    font-size: 16px;
+    line-height: 150%; /* 24px */
+}
+
+.block {
+    box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.10);
+    margin-bottom: 100px;
+}
+
+.block_1 {
+    padding-top: 20px;
+}
+
+.block__img {
+    margin-bottom: 25px;
+}
+
+.block_p {
+    margin-top: 22px;
+    margin-bottom: 39px;
+    color: #AAA;
+    font-family: Gilroy-Regular;
+    font-size: 15px;
+    line-height: 150%; /* 22.5px */
+}
+
+.content__button {
+    margin-bottom: 50px;
+    color: #FFF;
+    font-family: Gilroy-Bold;
+    font-size: 13px;
+    line-height: 150%; /* 19.5px */
+    background-color: #F25822;
+    border-radius: 50px;
+    padding: 15px 26px 15px 46px;
+}
+
+.vector_img {
+    margin-left: 9px;
+}

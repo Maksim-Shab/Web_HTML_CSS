@@ -7,6 +7,10 @@ a {
     margin: 0;
 }
 
+.top {
+    font-weight: 400;
+}
+
 button, input[type="submit"], input[type="reset"] {
 	background: none;
 	color: inherit;
