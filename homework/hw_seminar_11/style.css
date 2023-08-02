@@ -110,7 +110,7 @@ button, input[type="submit"], input[type="reset"] {
 
 .big_content_img {
 	min-height: 180px;
-	grid-column: 1 / -1;   
+	grid-column: 1 / 3;   
 	position: relative;
 }
 
