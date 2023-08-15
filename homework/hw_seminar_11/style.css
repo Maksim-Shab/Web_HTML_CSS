@@ -41,10 +41,10 @@ img {
 	padding-left: calc(50% - 570px);
     padding-right: calc(50% - 570px);
 }
-
+/* 
 .top {
 	padding-bottom: 99px;
-}
+} */
 
 .header {
 	display: flex;
@@ -108,19 +108,28 @@ img {
 	position: absolute;
 	right: 0;
     z-index: -1;
-    transition: .3s;
+    transition: .9s;
     opacity: 0;
     box-shadow: 0 0 10px rgba(0,0,0, .5);
     background: white;
 	width: 14.5rem;
 	height: 39.625rem;
 	padding-bottom: 2rem;
+	/* display:none; */
 }
 
-.nav_open:hover .nav{
+.header:hover ~ .nav,
+.nav:hover {
     opacity: 1;
+	/* display: block; */
     z-index: 100;
-	background-color: #F16D7F;
+	/* background-color: #F16D7F; */
+}
+
+.nav:hover .nav {
+	opacity: 1;
+	z-index: 100;
+	display: block;
 }
 
 .nav_menu {
@@ -168,12 +177,12 @@ img {
 
 .promo_content {
 	padding-left: 3.98rem;
-	
+	padding-top: 17%;
 }
 
 .promo_text {
 	border-left: 12px solid #F16D7F;
-    margin-top: 48%;
+    /* margin-top: 65%; */
 }
 
 .promo_h1 {
@@ -207,6 +216,7 @@ img {
     gap: 1.88rem;
 	padding-top: 64px;
 	padding-bottom: 6rem;
+	justify-items: center;
 }
 
 .cotegories_block {
@@ -235,6 +245,10 @@ img {
 	/* min-height: 180px; */
 	grid-column: 1 / 4;   
 	position: relative;
+}
+
+.cotegories_img_mobile {
+	display: none;
 }
 
 .categories_content_p {
@@ -385,8 +399,9 @@ img {
 
 .footer_top {
 	background-color: #222224;
-	display: inline-flex;
-	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	/* width: 100%; */
 	padding-top: 6.44rem;
 	padding-bottom: 6.5rem;
 	gap: 1.88rem;
@@ -395,7 +410,7 @@ img {
 .footer_top_block_a {
 	display: grid;
 	justify-items: center;
-	width: 22.5rem;
+	/* width: 22.5rem; */
 	/* text-align: center; */
 }
 
@@ -437,24 +452,36 @@ img {
 .footer_center { 
 	position: relative;
 	text-align: center;
-	height: 100%;
+	height: 28rem;
+    width: 100vw;
 }
 
 .footer_center_background {
-	height: 100%;	
+	/* height: 100%;	 */
+	/* width: 100%; */
+}
+
+.footer_center_background_mobile {
+	display: none;
 }
 
 .footer_center_content {
 	position: absolute;
 	top: 0;
 	background: rgba(244, 244, 244, 0.70);
-	width: 100%;
+	/* width: 100%; */
 	height: 100%;
 	display: flex;
 	align-items: center;
 	margin-right: 20.45rem;
-	gap: 20.45rem;
+	gap: 13.95rem;
 	/* padding-bottom: 5rem; */
+}
+
+.footer_center_block, 
+.footer_center_block_2 {
+	display: grid;
+    justify-items: center;
 }
 
 .footer_centr_photo {
@@ -511,7 +538,9 @@ img {
 .email_button {
 	background-color: #F16D7F;
 	border-color: #F16D7F;
-	width: 6.25rem;
+	/* width: 6.25rem; */
+	padding-left: 1.088rem;
+    padding-right: 1.088rem;
 	height: 3.0625rem;
 	border-radius: 0 25px 25px 0;
 	color: #FFF;
@@ -522,11 +551,12 @@ img {
 }
 
 .footer_footer {
-	display: inline-flex;
-	width: 100rem;
+	display: flex;
+	/* width: 100vw; */
 	height: 4.9375rem;
 	background-color: #222224;
 	align-items: center;
+	justify-content: space-between;
 }
 
 .footer_footer_text {
@@ -537,7 +567,7 @@ img {
 	font-weight: 400;
 	line-height: normal;
 	width: 20.75rem;
-	margin-right: 40.94rem;
+	/* margin-right: 40.94rem; */
 }
 
 .footer_footer_brands {
@@ -565,10 +595,6 @@ img {
 .footer_footer_brands_img{
 	margin-top: 0.5rem;
 }
-
-/* .footer_footer_brands_img:hover path {
-	fill: #FFF;
-} */
 
 @media (min-width: 768px) and (max-width: 1024px) {
 	.logo {
@@ -611,6 +637,50 @@ img {
 		padding: 0.58rem 6.55rem 0.69rem 6.75rem;
 	}
 
+	.footer_top,
+	.footer_center,
+	.footer_center_content {
+		display: grid;
+		align-items: center;
+		justify-items: center;
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.footer_top {
+		padding-top: 3.01rem;
+		padding-bottom: 4rem;
+		gap: 3.03rem;
+	}
+
+	
+	.footer_center_content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-right: 0;
+		gap: 0;
+		width: 100%;
+	}
+
+	.footer_center {
+		height: 38.38rem;
+		z-index: -1;
+	}
+	.footer_center_background_desktop {
+		display: none;
+	}
+
+	.footer_center_background_mobile {
+		display: block;
+	}
+
+	.footer_footer_text {
+		margin-left: 2rem;
+	}
+
+	.footer_footer_brands {
+		margin-right: 2.02rem;
+	}
 
 
 }
@@ -632,9 +702,14 @@ img {
 	.promo_img {
 	display: none;
 	}
+
+	.promo_text {
+		margin-top: 55%;
+	}
 	
 	.promo_content {
 		height: 22.6875rem;
+		padding-top: 0;
 	}
 
 	.promo_h1 {
@@ -660,9 +735,16 @@ img {
 	/* min-height: 180px; */
 		grid-column: 1 / 2; 
 		height: 6.9375rem;  
-		background-image: url("img/logo_accesories_mobile.png");
-	
+		position: relative;
 	}	
+
+	.cotegories_img_desktop {
+		display: none;
+	}
+
+	.cotegories_img_mobile {
+		display: block;
+	}
 
 	.items_block{
 		display: grid;
@@ -676,6 +758,87 @@ img {
 	.items_img_2 {
 		padding-top: 0;
 		padding-bottom: 0;
-		
+	}
+
+	.footer_top {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 3.02rem;
+		padding-top: 3rem;
+    	padding-bottom: 5.06rem;
+	}
+
+	.footer_center {
+		height: 34.375rem;
+		z-index: -1;
+	}
+
+	.footer_center_background_desktop {
+		display: none;
+	}
+
+	.footer_center_background_mobile {
+		display: block;
+		height: 100%;
+		object-fit: cover;
+		object-position: 1 0;
+	}
+
+	.footer_center_content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-right: 0;
+		gap: 0;
+		width: 100%;
+	}
+
+	.footer_centr_photo {
+		width: 5.73331rem;
+		height: 5.73331rem;
+		margin-top: 4rem;
+	}
+
+	.footer_centr_h3 {
+		width: 21.4375rem;
+		height: 4.5625rem;
+		margin-bottom: 3.69rem;
+		font-family: Lato;
+		font-size: 1.125rem;
+		font-weight: 400;
+	}
+
+	.footer_center_h2 {
+		font-family: Lato;
+		font-size: 1.5rem;
+		font-weight: 700;
+		line-height: 153.2%; /* 2.298rem */
+	}
+
+	.footer_center_p {
+		font-family: Lato;
+		font-size: 0.875rem;
+		font-weight: 400;
+		line-height: 153.2%;
+		margin-bottom: 1.38rem;
+	}
+
+	.footer_center_block_2{
+		margin-bottom: 7.5rem;
+		width: auto;
+	}
+
+	.footer_footer {
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: flex-start;
+		align-items: center;
+		gap: 2.5rem;
+		height: 8.9375rem;
+		padding-bottom: 0.58rem;
+	}
+
+	.footer_footer_text {
+		width: auto;
 	}
 }
