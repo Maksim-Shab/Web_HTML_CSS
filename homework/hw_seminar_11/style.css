@@ -156,7 +156,7 @@ img {
 	font-size: 0.875rem;
 	font-weight: 400;
 	margin-top: 0.75rem;
-	margin-left: 3.34rem;
+	margin-left: 1.34rem;
 }
 
 .promo {
@@ -454,11 +454,6 @@ img {
 	text-align: center;
 	height: 28rem;
     width: 100vw;
-}
-
-.footer_center_background {
-	/* height: 100%;	 */
-	/* width: 100%; */
 }
 
 .footer_center_background_mobile {
